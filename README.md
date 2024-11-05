@@ -1,1 +1,19 @@
+# CAPSTONE-PROJECT-1
+### ABSTRACT
+# INTRODUCTION
+## Objectives
+# DATA INFORMATION
+## Data Source
+## Data Collection
+## Data Characteristics
+# BASIC STATISTICS IN THE DATASET
+# METHODOLOGY
+## Data Preparation
+# EXPLORATORY DATA ANALYSIS (EDA)
+# TOOLS USED
+# ANALYSIS
+## Dashboard overview
+## Insight Generation
+# RECOMMENDATION
+# CONCLUSION
 # CAPSTONE-PROJECT-2
