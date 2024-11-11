@@ -1,26 +1,23 @@
 # CAPSTONE-PROJECT-1
-## ABSTRACT
-## INTRODUCTION
-## OBJECTIVE
-## DATA SOURCE
-## DATA COLLECTION
-## DATA CHARACTERISTICS
+Sales Performance Analysis for a Retail Store
+
 ## BASIC STATISTICS IN THE DATASET
-## METHODOLOGY
-## DATA PREPARATION
-## EXPLORATORY DATA ANALYSIS (EDA)
-## TOOLS USED
-## ANALYSIS
-## DASHBOARD OVERVIEW ashboard overview
-## INSIGHT GENERATION
-## RECOMMENDATION
-## CONCLUSION
+[Overview](#overview)
 
+[Data Sources](#data-sources)
 
-# CAPSTONE-PROJECT-2
+[Tools Used](#tools-used)
+
+[Data Cleaning and Preparations](#data-cleaning-preparations)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Analysis](#data-analysis)
+
+[Data Visualization](#data-visualization)
 ## Overview
 This project aim is to analyze and visualize Sales Data using the tools: Excel (for data cleaning, preparation, and PivotTable analysis); SQL Server (for complex querying and data manipulation); and PowerBI (for creating interactive and insightful visualizations). By leveraging these tools, we transformed raw data into actionable insights, providing a comprehensive understanding of sales performance across various dimensions.
-
+## DATA SOURCE
 ## Objectives
 To clean and prepare raw sales data for analysis.
 
@@ -87,3 +84,8 @@ Sales Contribution by Region: A doughnut chart showing the percentage of total s
 Interactive Filters: Enabled users to filter data by different dimensions such as date range, product category, and region for deeper insights.
 
 By integrating these tools, the project successfully transformed raw sales data into valuable insights, helping stakeholders make informed decisions based on data-driven analysis.
+## DASHBOARD OVERVIEW ashboard overview
+## INSIGHT GENERATION
+## RECOMMENDATION
+## CONCLUSION
+# CAPSTONE-PROJECT-2
