@@ -78,19 +78,74 @@ PivotTables: Created PivotTables to summarize and analyze sales data by Product,
 ### Using SQL Server:
 Querying Data: Utilized SQL queries to retrieve specific insights from the dataset.
 - Total sales for each product category.
-  ```sql SELECT Product,
-SUM(Revenue) AS TotalSales 
-FROM Sales_Data$
-GROUP BY Product;
+  ```sql
+  SELECT Product,
+  SUM(Revenue) AS TotalSales
+  FROM Sales_Data$
   GROUP BY Product;
   
 - Number of sales transactions in each region.
+  ```sql
+  SELECT Region,
+  COUNT(OrderID) AS NumberOfTransactions
+  FROM Sales_Data$
+  GROUP BY Region;
+  
 - Identified the highest selling product by total sales value.
+  ```sql
+  SELECT TOP 1 Product,
+  SUM(Revenue) AS TotalSales
+  FROM Sales_Data$
+  GROUP BY Product
+  ORDER BY TotalSales DESC;
+  
 - Calculated total revenue per product.
+  ```sql
+  SELECT Product,
+  SUM(Revenue) AS TotalRevenue
+  FROM Sales_Data$
+  GROUP BY Product;
+  
 - Calculated monthly sales totals for the current year.
+  ```sql
+  SELECT DATEPART(MONTH, OrderDate) AS Month,
+  SUM(Revenue) AS MonthlySalesTotal
+  FROM Sales_Data$
+  WHERE YEAR(OrderDate) = 2024
+  GROUP BY DATEPART(MONTH, OrderDate)
+  ORDER BY Month;
+  
 - Identified the top 5 customers by total purchase amount.
+  ```sql
+  SELECT TOP 5 [Customer Id],
+  SUM(Revenue) AS TotalPurchaseAmount
+  FROM dbo.Sales_Data$
+  GROUP BY [Customer Id]
+  ORDER BY TotalPurchaseAmount DESC;
+
 - Calculated the percentage of total sales contributed by each region.
+  ```sql
+  WITH TotalSales AS (
+  SELECT SUM(Revenue) AS TotalSalesValue
+  FROM Sales_Data$
+  )
+  SELECT Region, SUM(Revenue) AS SalesValue,
+         (SUM(Revenue) * 100.0 / (SELECT TotalSalesValue FROM TotalSales)) AS SalesPercentage
+  FROM Sales_Data$
+  GROUP BY Region;
+
 - Identified products with no sales in the last quarter.
+  ```sql
+  SELECT Product
+  FROM Sales_Data$
+  GROUP BY Product
+  HAVING SUM(CASE
+             WHEN OrderDate >= DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()) - 1, 0)
+             AND OrderDate < DATEADD(QUARTER, DATEDIFF(QUARTER, 0, GETDATE()), 0)
+             THEN Quantity
+             ELSE 0
+             END) = 0;
+           
 
 ### Dashboard Creation: Developed an interactive dashboard displaying key sales metrics.
 
