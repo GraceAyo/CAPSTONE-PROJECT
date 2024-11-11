@@ -1,5 +1,5 @@
 # CAPSTONE-PROJECT-1
-Sales Performance Analysis for a Retail Store
+SALES PERFORMANCE ANALYSIS FOR A RETAIL STORE
 
 [Overview](#overview)
 
@@ -12,10 +12,6 @@ Sales Performance Analysis for a Retail Store
 [Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
-
-[Data Analysis](#data-analysis)
-
-[Data Visualization](#data-visualization)
 
 ## Overview
 This project aim is to analyze and visualize Sales Data using the tools; Excel, SQL Server, and PowerBI. By leveraging these tools, raw data was transformed into actionable insights, providing a comprehensive understanding of sales performance across various dimensions.
@@ -147,21 +143,15 @@ Querying Data: Utilized SQL queries to retrieve specific insights from the datas
              END) = 0;
            
 
-### Dashboard Creation: Developed an interactive dashboard displaying key sales metrics.
-
-Total Sales by Region: A bar chart visualizing sales distribution across regions.
-
-Monthly Sales Trends: A line chart showing sales trends over the months.
-
-Top Products and Customers: Pie charts illustrating top-selling products and top customers by purchase amount.
-
-Sales Contribution by Region: A doughnut chart showing the percentage of total sales contributed by each region.
-
-Interactive Filters: Enabled users to filter data by different dimensions such as date range, product category, and region for deeper insights.
+### Using power BI
+Dashboard Creation: Developed an interactive dashboard displaying key sales metrics.
+- Total Sales by Region: A bar chart visualizing sales distribution across regions.
+- Monthly Sales Trends: A line chart showing sales trends over the months.
+- Top Products and Customers: Pie charts illustrating top-selling products and top customers by purchase amount.
+- Sales Contribution by Region: A doughnut chart showing the percentage of total sales contributed by each region.
+- Interactive Filters: Enabled users to filter data by different dimensions such as date range, product category, and region for deeper insights.
 
 By integrating these tools, the project successfully transformed raw sales data into valuable insights, helping stakeholders make informed decisions based on data-driven analysis.
-
-[Data Visualization](#data-visualization)
 
 ## DASHBOARD OVERVIEW ashboard overview
 ## INSIGHT GENERATION
