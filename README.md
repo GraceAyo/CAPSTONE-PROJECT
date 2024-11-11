@@ -78,9 +78,10 @@ PivotTables: Created PivotTables to summarize and analyze sales data by Product,
 ### Using SQL Server:
 Querying Data: Utilized SQL queries to retrieve specific insights from the dataset.
 - Total sales for each product category.
-  SELECT Product,
-  SUM(Revenue) AS TotalSales
-  FROM Sales_Data$
+  ```sql SELECT Product,
+SUM(Revenue) AS TotalSales 
+FROM Sales_Data$
+GROUP BY Product;
   GROUP BY Product;
   
 - Number of sales transactions in each region.
