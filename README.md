@@ -27,19 +27,20 @@ This project aim is to analyze and visualize Sales Data using the tools; Excel, 
 - To visualize the data insights using PowerBI.
 
 ## Data source
+  The data in this project was sourced from LITA Data Analysis class
   
 ## Tools Used
-- Excel for [Download Here](https://www.microsoft.com):
+- Excel for: [Download Here](https://www.microsoft.com)
   1. Data cleaning
   2. Data preparation
   3. PivotTable analysis
-- SQL Server for [Download Here](https://www.microsoft.com/en/sql-server/sql-server-downloads):
+- SQL Server for: [Download SQL Here](https://www.microsoft.com/en/sql-server/sql-server-downloads) and [Download SSMS Here](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16)
   1.  Writing complex queries
   2.  Data retrieving
   3.  Data manipulate
-- PowerBI for:
+- PowerBI for: [Download Here](https://power-bi-desktop.en.softonic.com/download)
   1. creating interactive dashboards and visualizations.
-- GitHub for:
+- GitHub for: [Click Here](https://github.com)
   1. Portfolio Buliding
 
 ## Data Cleaning and Preparations
@@ -67,32 +68,28 @@ The following steps were taken to clean and prepare the data:
 ## Exploratory Data Analysis
 ### Using Excel:
 PivotTables: Created PivotTables to summarize and analyze sales data by Product, Region, and Order Date.
-
-Example: Analyzing Total Sales by Product to identify top-selling items.
-
-Calculating the average sales per product.
- Sum of Revenue by Product	
-
-
-Conditional Formatting: Highlighted key data points such as regions with the highest sales.
+- Calculating total Revenue by Product to identify top-selling items.
+- Analyzing the number of unique customers who purchased each product.
+- Getting the aggregate quantity of products sold in each region.
+- Tracking the total revenue generated on a monthly and yearly basis.
+- Summarizing unit price and quantity sold, as well as calculating the average revenue per region.
+- Calculating the overall revenue generated from all sales
 
 ### Using SQL Server:
 Querying Data: Utilized SQL queries to retrieve specific insights from the dataset.
-
-Total sales for each product category.
-
-Number of sales transactions in each region.
-
-Identified the highest selling product by total sales value.
-
-Calculated total revenue per product.
-
-Calculated monthly sales totals for the current year.
-Identified the top 5 customers by total purchase amount.
-
-Calculated the percentage of total sales contributed by each region.
-
-Identified products with no sales in the last quarter.
+- Total sales for each product category.
+  SELECT Product,
+  SUM(Revenue) AS TotalSales
+  FROM Sales_Data$
+  GROUP BY Product;
+  
+- Number of sales transactions in each region.
+- Identified the highest selling product by total sales value.
+- Calculated total revenue per product.
+- Calculated monthly sales totals for the current year.
+- Identified the top 5 customers by total purchase amount.
+- Calculated the percentage of total sales contributed by each region.
+- Identified products with no sales in the last quarter.
 
 ### Dashboard Creation: Developed an interactive dashboard displaying key sales metrics.
 
@@ -107,8 +104,6 @@ Sales Contribution by Region: A doughnut chart showing the percentage of total s
 Interactive Filters: Enabled users to filter data by different dimensions such as date range, product category, and region for deeper insights.
 
 By integrating these tools, the project successfully transformed raw sales data into valuable insights, helping stakeholders make informed decisions based on data-driven analysis.
-
-[Data Analysis](#data-analysis)
 
 [Data Visualization](#data-visualization)
 
