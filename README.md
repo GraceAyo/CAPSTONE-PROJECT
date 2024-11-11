@@ -5,11 +5,11 @@ Sales Performance Analysis for a Retail Store
 
 [Objectives](#objectives)
 
-[Data Sources](#data-sources)
+[Data Source](#data-source)
 
 [Tools Used](#tools-used)
 
-[Data Cleaning and Preparations](#data-cleaning-preparations)
+[Data Cleaning and Preparations](#data-cleaning-and-preparations)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
 
@@ -26,7 +26,7 @@ This project aim is to analyze and visualize Sales Data using the tools; Excel, 
 - To use SQL Server for advanced querying and data manipulation.
 - To visualize the data insights using PowerBI.
 
-## DATA SOURCE
+## Data source
   
 ## Tools Used
 - Excel for [Download Here](https://www.microsoft.com):
@@ -41,7 +41,6 @@ This project aim is to analyze and visualize Sales Data using the tools; Excel, 
   1. creating interactive dashboards and visualizations.
 - GitHub for:
   1. Portfolio Buliding
-
 
 ## Data Cleaning and Preparations
 The dataset contained 50,001 rows with columns stated below:
@@ -72,6 +71,8 @@ PivotTables: Created PivotTables to summarize and analyze sales data by Product,
 Example: Analyzing Total Sales by Product to identify top-selling items.
 
 Calculating the average sales per product.
+ Sum of Revenue by Product	
+
 
 Conditional Formatting: Highlighted key data points such as regions with the highest sales.
 
@@ -106,6 +107,11 @@ Sales Contribution by Region: A doughnut chart showing the percentage of total s
 Interactive Filters: Enabled users to filter data by different dimensions such as date range, product category, and region for deeper insights.
 
 By integrating these tools, the project successfully transformed raw sales data into valuable insights, helping stakeholders make informed decisions based on data-driven analysis.
+
+[Data Analysis](#data-analysis)
+
+[Data Visualization](#data-visualization)
+
 ## DASHBOARD OVERVIEW ashboard overview
 ## INSIGHT GENERATION
 ## RECOMMENDATION
