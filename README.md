@@ -29,11 +29,11 @@ This project aim is to analyze and visualize Sales Data using the tools; Excel, 
 ## DATA SOURCE
   
 ## Tools Used
-- Excel for[Download Here](https://www.microsoft.com):
+- Excel for [Download Here](https://www.microsoft.com):
   1. Data cleaning
   2. Data preparation
   3. PivotTable analysis
-- SQL Server for:
+- SQL Server for [Download Here](https://www.microsoft.com/en/sql-server/sql-server-downloads):
   1.  Writing complex queries
   2.  Data retrieving
   3.  Data manipulate
