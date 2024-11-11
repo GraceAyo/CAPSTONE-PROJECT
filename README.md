@@ -1,8 +1,9 @@
 # CAPSTONE-PROJECT-1
 Sales Performance Analysis for a Retail Store
 
-## BASIC STATISTICS IN THE DATASET
 [Overview](#overview)
+
+[Objectives](#objectives)
 
 [Data Sources](#data-sources)
 
@@ -15,37 +16,57 @@ Sales Performance Analysis for a Retail Store
 [Data Analysis](#data-analysis)
 
 [Data Visualization](#data-visualization)
+
 ## Overview
-This project aim is to analyze and visualize Sales Data using the tools: Excel (for data cleaning, preparation, and PivotTable analysis); SQL Server (for complex querying and data manipulation); and PowerBI (for creating interactive and insightful visualizations). By leveraging these tools, we transformed raw data into actionable insights, providing a comprehensive understanding of sales performance across various dimensions.
-## DATA SOURCE
+This project aim is to analyze and visualize Sales Data using the tools; Excel, SQL Server, and PowerBI. By leveraging these tools, raw data was transformed into actionable insights, providing a comprehensive understanding of sales performance across various dimensions.
+
 ## Objectives
-To clean and prepare raw sales data for analysis.
+- To clean and prepare raw Sales data for analysis.
+- To perform data analysis using Excel PivotTables.
+- To use SQL Server for advanced querying and data manipulation.
+- To visualize the data insights using PowerBI.
 
-To perform data analysis using Excel PivotTables.
+## DATA SOURCE
+  
+## Tools Used
+- Excel for[Download Here](https://www.microsoft.com):
+  1. Data cleaning
+  2. Data preparation
+  3. PivotTable analysis
+- SQL Server for:
+  1.  Writing complex queries
+  2.  Data retrieving
+  3.  Data manipulate
+- PowerBI for:
+  1. creating interactive dashboards and visualizations.
+- GitHub for:
+  1. Portfolio Buliding
 
-To use SQL Server for advanced querying and data manipulation.
 
-To visualize the data insights using PowerBI.
-Tools Used
-Excel: For initial data cleaning, preparation, and PivotTable analysis.
+## Data Cleaning and Preparations
+The dataset contained 50,001 rows with columns stated below:
+- Order ID
+- Customer ID
+- Product
+- Region
+- Order Date
+- Quantity
+- Unit Price
+  
+The following steps were taken to clean and prepare the data:
+1. Remove Duplicates:
+   - Using Excel shortcult "ALT+A" followed by "M", duplicate entries were removed.
+   - Out of 50,001 rows, 40,079 duplicates were removed, leaving us with 9,922 unique rows of data
+2. Data Transformation:
+   - Calculating additional metrics such as;
+     - Revenue (Quantity * Unit Price)
+     - Average revenue per producr (=AVERAGEIFS(H:H,C:C,J2))
+     - Total revenue per region (=SUMIFS(H:H,D:D,L2))
+3. Date Formatting:
+   - Ensured that all date entries are consistent and correctly formatted.
 
-SQL Server: For writing complex queries to retrieve and manipulate data.
-
-PowerBI: For creating interactive dashboards and visualizations.
-
-Data Cleaning and Preparation
-The initial dataset contained several columns: Order ID, Customer ID, Product, Region, Order Date, Quantity, Unit Price, and Revenue (Total Sales). The following steps were taken to clean and prepare the data:
-
-Remove Duplicates: Using Excel’s Remove Duplicates feature to ensure data integrity.
-
-Handle Missing Values: Identifying and addressing any missing or inconsistent data entries.
-
-Data Transformation: Calculating additional metrics such as Total Sales by multiplying Quantity by Unit Price.
-
-Date Formatting: Ensuring all date entries are consistent and correctly formatted.
-
-Exploratory Data Analysis
-Using Excel:
+## Exploratory Data Analysis
+### Using Excel:
 PivotTables: Created PivotTables to summarize and analyze sales data by Product, Region, and Order Date.
 
 Example: Analyzing Total Sales by Product to identify top-selling items.
@@ -54,7 +75,7 @@ Calculating the average sales per product.
 
 Conditional Formatting: Highlighted key data points such as regions with the highest sales.
 
-Using SQL Server:
+### Using SQL Server:
 Querying Data: Utilized SQL queries to retrieve specific insights from the dataset.
 
 Total sales for each product category.
@@ -71,7 +92,8 @@ Identified the top 5 customers by total purchase amount.
 Calculated the percentage of total sales contributed by each region.
 
 Identified products with no sales in the last quarter.
-Dashboard Creation: Developed an interactive dashboard displaying key sales metrics.
+
+### Dashboard Creation: Developed an interactive dashboard displaying key sales metrics.
 
 Total Sales by Region: A bar chart visualizing sales distribution across regions.
 
